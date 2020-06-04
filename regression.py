@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from sklearn import datasets, linear_model
 from sklearn.model_selection import train_test_split
 from matplotlib import pyplot as plt
@@ -34,3 +35,5 @@ print("The Explained Variance: %.2f" % regressor.score(X_test, y_test))
 #print("The Mean Absolute Error: %.2f degrees celsius" % mean_absolute_error(y_test, prediction))
 print("The Mean Squared Error: %.2f degrees celsius" % mean_square_error())
 #print("The Median Squared Error: %.2f degrees celsius" % mean_squared_error(y_test,prediction))
+print("Root Mean Squared Error: %.2f degrees celsius" % np.sqrt(mean_square_error()))
+
